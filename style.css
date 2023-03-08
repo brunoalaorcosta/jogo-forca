@@ -1,148 +1,133 @@
 @import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
 
-*{
+* {
     box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+    margin: 0 auto;
+    padding: 0 auto;
     font-family: Arial, Helvetica, sans-serif;
-}
-
-h1  {
+  }
+  
+  h1 {
     color: white;
     font-weight: bold;
-    font-family: 'Permanent Marker';
-}
-
-p{
+    font-family: "Permanent Marker";
+  }
+  
+  p {
     color: white;
-}
-
-.float-right{
+  }
+  
+  .float-right {
     color: white;
-}
-
-.container{
-    min-height: 100vh;
-    background-image: url('imagens/louza.png');
+    text-align: center;
+    line-height: 2;
+  }
+  
+  .container {
+    height: 40.6rem;
+    width: 100%;
+    height: 100vh;
+    background-image: url("imagens/louza.png");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    display: flex;
-    flex-direction: column;
-}
-
-.text-center{
+  }
+  
+  .text-center {
     text-align: center;
-    padding: 10px;
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-.caixaImagem{
+    padding-top: 5px;
+  }
+  
+  .caixaImagem {
+    width: 100%;
     margin-top: 1%;
     height: 20rem;
-    display: flex;
-    justify-content: center;
-}
-
-.float-right{
-    text-align: right;
-    margin: 10px 0 0 auto;
-    font-weight: bold;
-}
-
-#keyboard{
+  }
+  
+  #keyboard {
     padding: 10px;
     width: 80%;
-    margin-top: 30px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-
-.btn{
+  }
+  
+  .btn {
     height: 50px;
     width: 50px;
     margin: 5px;
     font-size: 20px;
     border-radius: 10px;
-    transition: 400ms;  
+    transition: 400ms;
     cursor: pointer;
     background-color: white;
-}
-
-.btn:hover{
-    transform: scale(1.2);
+  }
+  
+  .btn:hover {
+    scale: calc(1.2);
+    transition: 400ms;
     background-color: rgb(119, 175, 236);
-}
-
-.btnRodape{
+  }
+  
+  .btnRodape {
     display: flex;
     flex-direction: row;
-    justify-content: center;
-    margin-top: 20px;
-}
-
-.btnReset,
-.btnAdd{
+    margin: 0 auto;
+  }
+  
+  .btnReset,
+  .btnAdd {
     height: 30px;
     width: 15rem;
     font-size: 15px;
     border-radius: 10px;
     transition: 400ms;
     cursor: pointer;
-    background-color:white;
-}
-
-.btnReset:hover{
-    transform: scale(1.2);
+    background-color: white;
+  }
+  
+  .btnReset:hover {
+    scale: calc(1.2);
+    transition: 400ms;
     background-color: rgba(0, 0, 255, 0.473);
-}
-
-.btnAdd:hover{
-    transform: scale(1.1); 
-    background-color:rgba(0, 0, 255, 0.473);
-}
-
-.addWord{
+  }
+  .btnAdd:hover {
+    scale: calc(1.1);
+    transition: 400ms;
+    background-color: rgba(0, 0, 255, 0.473);
+  }
+  
+  .addWord {
     margin-left: 0;
     width: 16rem;
     border: none;
-    border-radius: .5rem;
-    background-color:white;
-}
-
-.btnAdd{
+    border-radius: 0.5rem;
+    background-color: white;
+  }
+  
+  .btnAdd {
     margin-right: 1rem;
-}
-
-@media screen and (max-width: 768px) {
+  }
+  
+  @media screen and (min-width: 320px) and (max-width: 480px) {
+    h1 {
+      color: white;
+      font-weight: bold;
+    }
+  
+    p {
+      color: white;
+    }
+  
+    .float-right {
+      color: white;
+      text-align: center;
+      line-height: 2;
+    }
+  
     .container {
-        min-height: 100vh;
-    }
-    .caixaImagem {
-        height: 10rem;
-    }
-    #keyboard {
-        margin-top: 20px;
-    }
-    .btnRodape {
-        flex-direction: column;
-        margin-top: 10px;
-    }
-    .btn {
-        height: 40px;
-        width: 40px;
-        margin: 3px;
-        font-size: 16px;
-        border-radius: 8px;
-    }
-    .btnReset,
-    .btnAdd {
-        height: 20px;
-        width: 
+      height: 70rem;
+      width: 100vw;
+      max-width: 800px;
+      margin: 0 auto;
+  
+      background-image
     }
 }
